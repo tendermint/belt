@@ -64,29 +64,15 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface"><a href="interfaces/jsonarray.html" class="tsd-kind-icon">JSONArray</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/jsonobject.html" class="tsd-kind-icon">JSONObject</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias"><a href="index.html#base64string" class="tsd-kind-icon">Base64<wbr>String</a></li>
-								<li class="tsd-kind-type-alias"><a href="index.html#binarystring" class="tsd-kind-icon">Binary<wbr>String</a></li>
-								<li class="tsd-kind-type-alias"><a href="index.html#bytes" class="tsd-kind-icon">Bytes</a></li>
-								<li class="tsd-kind-type-alias"><a href="index.html#jsonstring" class="tsd-kind-icon">JSONString</a></li>
-								<li class="tsd-kind-type-alias"><a href="index.html#jsonvalue" class="tsd-kind-icon">JSONValue</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="index.html#arraywrap" class="tsd-kind-icon">array<wbr>Wrap</a></li>
 								<li class="tsd-kind-function"><a href="index.html#base64tobytes" class="tsd-kind-icon">base64<wbr>ToBytes</a></li>
 								<li class="tsd-kind-function"><a href="index.html#bytestobase64" class="tsd-kind-icon">bytes<wbr>ToBase64</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="index.html#bytestojson" class="tsd-kind-icon">bytes<wbr>ToJSON</a></li>
 								<li class="tsd-kind-function"><a href="index.html#bytestostring" class="tsd-kind-icon">bytes<wbr>ToString</a></li>
 								<li class="tsd-kind-function"><a href="index.html#isobject" class="tsd-kind-icon">is<wbr>Object</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="index.html#jsontobytes" class="tsd-kind-icon">json<wbr>ToBytes</a></li>
 								<li class="tsd-kind-function"><a href="index.html#stringtobytes" class="tsd-kind-icon">string<wbr>ToBytes</a></li>
 								<li class="tsd-kind-function"><a href="index.html#tocanonicaljson" class="tsd-kind-icon">to<wbr>CanonicalJSON</a></li>
 								<li class="tsd-kind-function"><a href="index.html#tocanonicaljsonbytes" class="tsd-kind-icon">to<wbr>CanonicalJSONBytes</a></li>
@@ -98,96 +84,61 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="base64string" class="tsd-anchor"></a>
-					<h3>Base64<wbr>String</h3>
-					<div class="tsd-signature tsd-kind-icon">Base64<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/types.ts#L9">types.ts:9</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A Base64-encoded string.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="binarystring" class="tsd-anchor"></a>
-					<h3>Binary<wbr>String</h3>
-					<div class="tsd-signature tsd-kind-icon">Binary<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/types.ts#L14">types.ts:14</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A &quot;raw&quot; binary-encoded string.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="bytes" class="tsd-anchor"></a>
-					<h3>Bytes</h3>
-					<div class="tsd-signature tsd-kind-icon">Bytes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Uint8Array</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/types.ts#L4">types.ts:4</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A <code>Uint8Array</code> of binary data</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="jsonstring" class="tsd-anchor"></a>
-					<h3>JSONString</h3>
-					<div class="tsd-signature tsd-kind-icon">JSONString<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/types.ts#L19">types.ts:19</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A JSON-encoded string.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="jsonvalue" class="tsd-anchor"></a>
-					<h3>JSONValue</h3>
-					<div class="tsd-signature tsd-kind-icon">JSONValue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="interfaces/jsonarray.html" class="tsd-signature-type">JSONArray</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/jsonobject.html" class="tsd-signature-type">JSONObject</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/types.ts#L37">types.ts:37</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A JSON value.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="base64tobytes" class="tsd-anchor"></a>
-					<h3>base64<wbr>ToBytes</h3>
+					<a name="arraywrap" class="tsd-anchor"></a>
+					<h3>array<wbr>Wrap</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">base64<wbr>ToBytes<span class="tsd-signature-symbol">(</span>base64<span class="tsd-signature-symbol">: </span><a href="index.html#base64string" class="tsd-signature-type">Base64String</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="index.html#bytes" class="tsd-signature-type">Bytes</a></li>
+						<li class="tsd-signature tsd-kind-icon">array<wbr>Wrap<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, <span class="tsd-signature-symbol">...</span>rest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/base64.ts#L28">base64.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/arrayWrap.ts#L14">arrayWrap.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Wrap arguments in an array. If only one argument is provided:</p>
+								</div>
+								<ul>
+									<li>if it&#39;s <code>null</code> or <code>undefined</code>, return an empty array</li>
+									<li>if it&#39;s an array, return a copy of it</li>
+									<li>otherwise, return a new array containing it</li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>first argument</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>rest: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>other arguments</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>an array</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="base64tobytes" class="tsd-anchor"></a>
+					<h3>base64<wbr>ToBytes</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">base64<wbr>ToBytes<span class="tsd-signature-symbol">(</span>base64<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Base64String</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bytes</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/base64.ts#L28">base64.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,13 +149,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>base64: <a href="index.html#base64string" class="tsd-signature-type">Base64String</a></h5>
+									<h5>base64: <span class="tsd-signature-type">Base64String</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>string to decode</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="index.html#bytes" class="tsd-signature-type">Bytes</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bytes</span></h4>
 							<p>bytes from Base64-encoded string</p>
 						</li>
 					</ul>
@@ -213,13 +164,13 @@
 					<a name="bytestobase64" class="tsd-anchor"></a>
 					<h3>bytes<wbr>ToBase64</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">bytes<wbr>ToBase64<span class="tsd-signature-symbol">(</span>bytes<span class="tsd-signature-symbol">: </span><a href="index.html#bytes" class="tsd-signature-type">Bytes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="index.html#base64string" class="tsd-signature-type">Base64String</a></li>
+						<li class="tsd-signature tsd-kind-icon">bytes<wbr>ToBase64<span class="tsd-signature-symbol">(</span>bytes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bytes</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Base64String</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/base64.ts#L47">base64.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/base64.ts#L47">base64.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -230,14 +181,60 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>bytes: <a href="index.html#bytes" class="tsd-signature-type">Bytes</a></h5>
+									<h5>bytes: <span class="tsd-signature-type">Bytes</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>bytes to encode</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="index.html#base64string" class="tsd-signature-type">Base64String</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Base64String</span></h4>
 							<p>Base64-encoded string from bytes</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="bytestojson" class="tsd-anchor"></a>
+					<h3>bytes<wbr>ToJSON</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">bytes<wbr>ToJSON&lt;T&gt;<span class="tsd-signature-symbol">(</span>json<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONBytes</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/json.ts#L26">json.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Decode a value from JSON bytes</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>will throw if <code>JSON.parse</code> fails (e.g. on malformed JSON)</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>type of encoded value</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>json: <span class="tsd-signature-type">JSONBytes</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>JSON bytes to decode</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>value decoded from JSON bytes</p>
 						</li>
 					</ul>
 				</section>
@@ -245,13 +242,13 @@
 					<a name="bytestostring" class="tsd-anchor"></a>
 					<h3>bytes<wbr>ToString</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">bytes<wbr>ToString<span class="tsd-signature-symbol">(</span>bytes<span class="tsd-signature-symbol">: </span><a href="index.html#bytes" class="tsd-signature-type">Bytes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">bytes<wbr>ToString<span class="tsd-signature-symbol">(</span>bytes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bytes</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/bytes.ts#L24">bytes.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/bytes.ts#L24">bytes.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,7 +264,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>bytes: <a href="index.html#bytes" class="tsd-signature-type">Bytes</a></h5>
+									<h5>bytes: <span class="tsd-signature-type">Bytes</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>bytes to decode as a string</p>
 									</div>
@@ -288,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/isObject.ts#L9">isObject.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/isObject.ts#L9">isObject.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -310,17 +307,63 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="stringtobytes" class="tsd-anchor"></a>
-					<h3>string<wbr>ToBytes</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">string<wbr>ToBytes<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="index.html#bytes" class="tsd-signature-type">Bytes</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="jsontobytes" class="tsd-anchor"></a>
+					<h3>json<wbr>ToBytes</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">json<wbr>ToBytes&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONBytes</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/bytes.ts#L36">bytes.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/json.ts#L13">json.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Encode a value as JSON bytes</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>will throw if <code>JSON.stringify</code> fails (e.g. on circular reference)</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+									<div class="tsd-comment tsd-typography">
+										<p>type of encoded value</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>value to encode</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSONBytes</span></h4>
+							<p>JSON bytes</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="stringtobytes" class="tsd-anchor"></a>
+					<h3>string<wbr>ToBytes</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">string<wbr>ToBytes<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bytes</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/bytes.ts#L36">bytes.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +385,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="index.html#bytes" class="tsd-signature-type">Bytes</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bytes</span></h4>
 							<p>bytes encoded from string</p>
 						</li>
 					</ul>
@@ -357,7 +400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/canonical.ts#L16">canonical.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/canonical.ts#L16">canonical.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -385,13 +428,13 @@
 					<a name="tocanonicaljsonbytes" class="tsd-anchor"></a>
 					<h3>to<wbr>CanonicalJSONBytes</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>CanonicalJSONBytes<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="index.html#bytes" class="tsd-signature-type">Bytes</a></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>CanonicalJSONBytes<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bytes</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/canonical.ts#L75">canonical.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/canonical.ts#L75">canonical.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +451,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="index.html#bytes" class="tsd-signature-type">Bytes</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bytes</span></h4>
 							<p>the canonical JSON bytes</p>
 						</li>
 					</ul>
@@ -417,13 +460,13 @@
 					<a name="tocanonicaljsonclone" class="tsd-anchor"></a>
 					<h3>to<wbr>CanonicalJSONClone</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>CanonicalJSONClone<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="index.html#jsonvalue" class="tsd-signature-type">JSONValue</a></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>CanonicalJSONClone<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONValue</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/canonical.ts#L48">canonical.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/canonical.ts#L48">canonical.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,7 +488,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="index.html#jsonvalue" class="tsd-signature-type">JSONValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JSONValue</span></h4>
 							<p>the canonical JSON</p>
 						</li>
 					</ul>
@@ -460,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cosmos/belt/blob/5a0d558/src/canonical.ts#L62">canonical.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/cosmos/belt/blob/cedf1ac/src/canonical.ts#L62">canonical.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -499,26 +542,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/jsonarray.html" class="tsd-kind-icon">JSONArray</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/jsonobject.html" class="tsd-kind-icon">JSONObject</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="index.html#base64string" class="tsd-kind-icon">Base64<wbr>String</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="index.html#binarystring" class="tsd-kind-icon">Binary<wbr>String</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="index.html#bytes" class="tsd-kind-icon">Bytes</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="index.html#jsonstring" class="tsd-kind-icon">JSONString</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="index.html#jsonvalue" class="tsd-kind-icon">JSONValue</a>
+					<li class=" tsd-kind-function">
+						<a href="index.html#arraywrap" class="tsd-kind-icon">array<wbr>Wrap</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#base64tobytes" class="tsd-kind-icon">base64<wbr>ToBytes</a>
@@ -526,11 +551,17 @@
 					<li class=" tsd-kind-function">
 						<a href="index.html#bytestobase64" class="tsd-kind-icon">bytes<wbr>ToBase64</a>
 					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="index.html#bytestojson" class="tsd-kind-icon">bytes<wbr>ToJSON</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#bytestostring" class="tsd-kind-icon">bytes<wbr>ToString</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#isobject" class="tsd-kind-icon">is<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="index.html#jsontobytes" class="tsd-kind-icon">json<wbr>ToBytes</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="index.html#stringtobytes" class="tsd-kind-icon">string<wbr>ToBytes</a>
