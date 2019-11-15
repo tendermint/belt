@@ -4,6 +4,11 @@
 export type Bytes = Uint8Array;
 
 /**
+ * A `Uint8Array` of JSON data
+ */
+export type JSONBytes = Bytes;
+
+/**
  * A Base64-encoded string.
  */
 export type Base64String = string;
