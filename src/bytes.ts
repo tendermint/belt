@@ -1,4 +1,4 @@
-import { Bytes, USVString } from './types';
+import { Bytes, USVString } from '@tendermint/types';
 
 let TextDecoder: { new (): { decode (bytes: Bytes): USVString } };
 let TextEncoder: { new (): { encode (string: USVString): Bytes } };

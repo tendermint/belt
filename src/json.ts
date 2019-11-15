@@ -1,5 +1,5 @@
+import { JSONBytes } from '@tendermint/types';
 import { bytesToString, stringToBytes } from './bytes';
-import { JSONBytes } from './types';
 
 /**
  * Encode a value as JSON bytes

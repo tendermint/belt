@@ -1,4 +1,4 @@
-import { Base64String, BinaryString, Bytes } from './types';
+import { Base64String, BinaryString, Bytes } from '@tendermint/types';
 
 let atob: (base64: Base64String) => BinaryString;
 let btoa: (binary: BinaryString) => Base64String;

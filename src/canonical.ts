@@ -1,4 +1,4 @@
-import { Bytes, JSONValue } from './types';
+import { Bytes, JSONValue } from '@tendermint/types';
 import { isObject } from './isObject';
 import { stringToBytes } from './bytes';
 
