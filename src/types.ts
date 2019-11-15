@@ -19,6 +19,11 @@ export type BinaryString = string;
 export type JSONString = string;
 
 /**
+ * A Unicode Scalar Values-encoded string
+ */
+export type USVString = string;
+
+/**
  * A JSON object.
  */
 export interface JSONObject {

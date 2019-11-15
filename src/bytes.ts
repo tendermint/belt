@@ -1,7 +1,7 @@
-import { Bytes } from './types';
+import { Bytes, USVString } from './types';
 
-let TextDecoder: { new (): { decode (bytes: Bytes): string } };
-let TextEncoder: { new (): { encode (string: string): Bytes } };
+let TextDecoder: { new (): { decode (bytes: Bytes): USVString } };
+let TextEncoder: { new (): { encode (string: USVString): Bytes } };
 
 if (typeof process !== 'undefined' && process.versions && process.versions.node) {
     ({ TextDecoder, TextEncoder } = require('util'));
