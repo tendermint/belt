@@ -33,12 +33,12 @@
         "watch":          "yarn build:dev --watch"
     },
     "dependencies":    {
+        "@tendermint/types": "0.1.1"
     },
     "devDependencies": {
         "@babel/core":                      "7.7.2",
         "@babel/preset-env":                "7.7.1",
         "@babel/preset-typescript":         "7.7.2",
-        "@types/bech32":                    "1.1.1",
         "@types/jest":                      "24.0.22",
         "@types/node":                      "12.12.7",
         "@typescript-eslint/eslint-plugin": "2.6.1",
