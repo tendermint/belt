@@ -3,14 +3,14 @@ import jest from 'jest';
 declare global {
     // eslint-disable-next-line @typescript-eslint/no-namespace
     namespace jest {
-        interface Matchers<R, T> {
+        interface Matchers<R, T = {}> {
             toBeBytes (bytes: Uint8Array | number[]): R;
         }
     }
 }
 
 expect.extend({
-    toBeBytes (received: Uint8Array, expected: Uint8Array | number[]): jest.CustomMatcherResult {
+    toBeBytes (received: Uint8Array, expected: Uint8Array | number[]) {
         if (!(received instanceof Uint8Array)) {
             return {
                 message: () => `expected ${ received } to be a Uint8Array`,

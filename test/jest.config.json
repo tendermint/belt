@@ -1,9 +1,8 @@
 {
     "verbose":            true,
     "testMatch":          [ "**/*.test.[jt]s" ],
-    "transform":          {
-        "\\.ts$": "ts-jest"
-    },
+    "preset":             "ts-jest",
+    "testEnvironment":    "./environment.js",
     "setupFilesAfterEnv": [
         "./setup.ts"
     ]
