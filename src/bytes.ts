@@ -36,3 +36,14 @@ export function bytesToString (bytes: Bytes): string {
 export function stringToBytes (string: string): Bytes {
     return encoder.encode(string);
 }
+
+/**
+ * Convert a Buffer to bytes.
+ *
+ * @param   buffer - Buffer to convert to bytes
+ *
+ * @returns bytes converted from Buffer
+ */
+export function bufferToBytes (buffer: Buffer): Bytes {
+    return new Uint8Array(buffer.buffer, buffer.byteOffset, buffer.byteLength / Uint8Array.BYTES_PER_ELEMENT);
+}
