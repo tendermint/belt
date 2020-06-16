@@ -20,10 +20,7 @@ export function toCanonicalJSON (value: any): any {
         const keys   = Object.keys(value).sort();
 
         for (const key of keys) {
-            const keyValue = value[key];
-            if (keyValue != null) {
-                sorted[key] = toCanonicalJSON(keyValue);
-            }
+            sorted[key] = toCanonicalJSON(value[key]);
         }
 
         return sorted;
